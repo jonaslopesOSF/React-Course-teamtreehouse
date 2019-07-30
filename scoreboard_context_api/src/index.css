@@ -1,5 +1,4 @@
 /* ELEMENT STYLES -------------------- */
-
 body {
   background: #e8e7e7; 
   font-family: arial;
@@ -12,7 +11,7 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: #8063FA;
+  background-color: #4682B4;
   border-bottom: solid 2px #D4CAFF;
 }
 
@@ -24,10 +23,9 @@ header h1 {
 }
 
 /* FORMS */
-
 form {
   display: flex;
-  background-color: #8063FA;
+  background-color: #1244cc;
 }
 
 input[type=text] {
@@ -36,7 +34,7 @@ input[type=text] {
   margin: 15px 10px 15px 15px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #5B45B9;
+  background-color: rgb(26, 114, 185);
   border-style: none;
   text-shadow: none;
   text-transform: uppercase;
@@ -78,7 +76,6 @@ input[type=submit] {
 }
 
 /* ICONS */
-
 svg {
   width: 28px;
   height: 19px;
@@ -97,12 +94,11 @@ svg {
 }
 
 /* COMPONENT STYLES -------------------- */
-
 .scoreboard {
   background: #fff;
   width: 700px;
   margin: 70px auto;
-  box-shadow: 0 2px 0 rgb(133, 104, 250);
+  box-shadow: 0 2px 0 rgb(42, 10, 168);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -138,7 +134,7 @@ svg {
     border: none;
     outline: none;
     visibility: hidden;
-    color: #EF5350;
+    color: red;
     cursor: pointer;
     margin: 0 10px 0 0;
     padding: 0;
@@ -151,6 +147,7 @@ svg {
 }
 
 .stats {
+  display: flex;
   margin: 0 0 0 28px;
   font-weight: normal;
 }
@@ -169,7 +166,7 @@ svg {
 .stopwatch {
   padding: 15px 10px 5px 10px;
   margin: -5px -10px -5px 10px;
-  background: #5B45B9;
+  background: 	rgb(11, 88, 151);
 }
 
   .stopwatch-time {

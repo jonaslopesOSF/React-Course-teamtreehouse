@@ -57,7 +57,7 @@ input[type=submit] {
   font-size: .6em;
   margin: 15px 15px 15px 0; 
   padding: 10px;
-  background-color: #44338D;
+  background-color: rgba(10, 35, 146, 0.938);;
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -177,7 +177,7 @@ svg {
 
   .stopwatch button {
     margin: 8px 5px;
-    background-color: #44338D;
+    background-color: rgba(10, 35, 146, 0.938);
     border-radius: 5px;
     padding: 7px 8px;
     border: none;

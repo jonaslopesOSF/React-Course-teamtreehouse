@@ -7,11 +7,11 @@ import Icon from './Icon';
 class Player extends PureComponent {
 
   static propTypes = { // because it is a class component
-    index: PropTypes.number,
+    index: PropTypes.number.isRequired,
   }
 
   render() {
-    const { index, } = this.props;
+    const { index } = this.props;
 
     return (
       <div className="player">

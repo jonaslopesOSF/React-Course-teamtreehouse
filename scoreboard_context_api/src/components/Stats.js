@@ -5,7 +5,7 @@ const Stats = () => {
 
   return (
     <Consumer>
-      {({ players }) => {
+      { ({ players }) => {
         const totalPlayers = players.length;
         const totalPoints = players.reduce((total, player) => {
           return total + player.score;

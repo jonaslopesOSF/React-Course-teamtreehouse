@@ -11,8 +11,8 @@ import Home from './Home';
 import About from './About';
 import Teachers from './Teachers';
 import Courses from './Courses';
-import NotFound from './NotFound';
 import Featured from './Featured';
+import NotFound from './NotFound';
 
 const App = () => (
   <BrowserRouter>

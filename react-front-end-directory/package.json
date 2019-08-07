@@ -2,7 +2,7 @@
   "name": "react-front-end-directory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jonaslopesOSF.github.io/course-directory",
+  "homepage": "https://jonaslopesOSF.github.io/React-Build",
   "dependencies": {
     "gh-pages": "^2.1.0",
     "react": "^16.8.6",

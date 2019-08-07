@@ -1,4 +1,4 @@
-import React, { Component, Proptypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 export default class Stopwatch extends Component {
   state = {
@@ -15,39 +15,38 @@ export default class Stopwatch extends Component {
     clearInterval(this.interval);
   }
 
-  onTick = () => {
-    if (this.state.running) {
-      var now = Date.now();
-      this.setState({
-        elapsedTime: this.state.elapsedTime + (now - this.state.previousTime),
-        previousTime: now,
-      });
-    }
-  }
-
   onStart = () => {
     this.setState({
       running: true,
       previousTime: Date.now(),
     });
-  }
+  };
 
   onStop = () => {
     this.setState({
       running: false,
     });
-  }
+  };
 
   onReset = () => {
     this.setState({
       elapsedTime: 0,
       previousTime: Date.now(),
     });
-  }
+  };
+
+  onTick = () => {
+    if (this.state.running) {
+      var now = Date.now();
+      this.setState({
+        elapsedTime: this.state.elapsedTime + (now - this.state.previousTime),
+        previousTime: Date.now(),
+      });
+    }
+  };
 
   render() {
-    var seconds = Math.floor(this.state.elapsedTime / 1000);
-    
+    const seconds = Math.floor(this.state.elapsedTime / 1000);
     return (
       <div className="stopwatch" >
         <h2>Stopwatch</h2>
@@ -59,6 +58,6 @@ export default class Stopwatch extends Component {
         }
         <button onClick={this.onReset}>Reset</button>
       </div>
-    )
+    );
   }
 }
